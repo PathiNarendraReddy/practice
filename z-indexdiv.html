@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Z-index div type </title>
+    <style>
+        one{
+            position: relative;
+        }
+       .one1{
+            position: absolute;
+            width: 200px;
+            height: 150px;
+            border: 6px solid black;
+             z-index:2;
+             background-color: blue;
+             text-align: center;
+        }
+        .one2{
+            position:relative;
+            width: 200px;
+            height: 150px;
+          background-color: green;
+             z-index:-5;
+             left: 150px;
+             top:50px;
+             text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Z-index div model</h1>
+    <div class="one1">Z-index 1</div>
+    <div class="one2">Z-index 2</div>
+</body>
+</html>
