@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gradient example </title>
+        <style>
+            h1{
+                text-align: center;
+              color: blue;
+              text-decoration:underline;
+            }
+            h2{
+                text-align: left;
+                padding: 30px;
+            }
+            div{
+              width: 300px;
+              height: 250px;
+              background-color: powderblue;
+            }
+            div.linear{
+                background: repeating-linear-gradient(skyblue,green,blue,orange);
+            }
+            div.radial{
+                background:repeating-radial-gradient(green,white,blue);
+            }
+            div.conic{
+                background: repeating-conic-gradient(gray 255deg,green 290deg,blue 20deg);
+
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1>gradient example</h1>
+        <div class="linear"><h2>linear-gradient</h2> 
+        </div>
+        <div class="radial">
+            <h2>radial-gradient</h2>
+        </div> 
+            <div class="conic"> 
+            <h2>conic-gradient</h2>
+
+            </div>
+    </body>
+</html>
