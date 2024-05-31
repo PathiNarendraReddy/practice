@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex direction </title>
+        <style>
+            h1{
+                color: blue;
+                text-align: center;
+                text-decoration:  underline;
+            }
+            .container{
+                display: flex;
+              background-color: blueviolet;
+              align-items: center;
+            }
+            .container>div{
+              width: 100px;
+              background-color: beige;
+              margin: 20px;
+              padding: 10px;
+                font-size: 15px;
+            }
+            .container1{
+                display: flex;
+              background-color: blueviolet;
+              align-items: flex-start;
+            }
+            .container1>div{
+              background-color:gray;
+              margin: 20px;
+              padding: 20px;
+               font-size: 20px;
+               width: 150px;
+            }
+            .container2{
+                display: flex;
+              background-color: blueviolet;
+           align-items: flex-end;
+            }
+            .container2>div{
+              background-color: wheat;
+              margin: 20px;
+              padding: 15px;
+              font-size: 20px;
+              width: 180px;
+            }
+            .container3{
+                display: flex;
+              background-color: blueviolet;
+          align-items: stretch;
+            }
+            .container3>div{
+              background-color: wheat;
+              margin: 20px;
+              padding: 15px;
+               font-size: 25px;
+               width: 90px;
+            }
+            .container4{
+                display: flex;
+              background-color: blueviolet;
+              align-items: baseline;
+            }
+            .container4>div{
+              background-color: wheat;
+              margin: 20px;
+              padding: 15px;
+               font-size: 25px;
+               width: 90px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>flex direction</h1>
+        <h1>center</h1>
+        <div class="container">
+            <div>NARENDRA REDDY</div>
+            <div>nithish REDDY</div> 
+            <div>rakesh</div> 
+            <div>sandeep</div>
+        </div><br>
+        <h1>flex-start</h1>
+        <div class="container1">
+            <div>NARENDRA REDDY</div>
+            <div>nithish REDDY</div> 
+            <div>rakesh</div> 
+            <div>sandeep</div>
+        </div><br>
+        <h1>flex-end</h1>
+        <div class="container2">
+            <div >NARENDRA REDDY</div>
+            <div>nithish REDDY</div> 
+            <div>rakesh</div> 
+            <div>sandeep</div>
+        </div><br>
+        <h1>stretch</h1>
+        <div class="container3">
+            <div >777</div>
+            <div>nithish REDDY</div> 
+            <div>rakesh</div> 
+            <div>sandeep</div>
+          
+        </div><br>
+        <h1>baseline</h1>
+        <div class="container4">
+            <div >NARENDRA REDDY</div>
+            <div>nithish REDDY</div> 
+            <div>rakesh</div> 
+            <div>sandeep</div>
+        </div>
+    </body>
+</html>
