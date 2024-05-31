@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex direction </title>
+        <style>
+            h1{
+                color: blue;
+                text-align: center;
+                text-decoration:  underline;
+            }
+            .container{
+                display: flex;
+              background-color: blueviolet;
+              flex-direction: row;
+            }
+            .container>div{
+              width: 100px;
+              background-color: beige;
+              margin: 20px;
+              padding: 10px;
+                font-size: 15px;
+            }
+            .container1{
+                display: flex;
+              background-color: blueviolet;
+              flex-direction: row-reverse;
+            }
+            .container1>div{
+              display: flex;
+              background-color:gray;
+              margin: 20px;
+              padding: 20px;
+               font-size: 20px;
+            }
+            .container2{
+                display: flex;
+              background-color: blueviolet;
+              flex-direction: column;
+            }
+            .container2>div{
+              display: flex;
+              background-color: wheat;
+              margin: 20px;
+              padding: 15px;
+              font-size: 20px;
+            }
+            .container3{
+                display: flex;
+              background-color: blueviolet;
+              flex-direction: column-reverse;
+            }
+            .container3>div{
+              display: flex;
+              background-color: wheat;
+              margin: 20px;
+              padding: 15px;
+               font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>flex direction</h1>
+        <h1>row</h1>
+        <div class="container">
+            <div>NARENDRA REDDY</div>
+            <div>nithish REDDY</div> 
+            <div>rakesh</div> 
+            <div>sandeep</div>
+        </div><br>
+        <h1>row-revrse</h1>
+        <div class="container1">
+            <div>NARENDRA REDDY</div>
+            <div>nithish REDDY</div> 
+            <div>rakesh</div> 
+            <div>sandeep</div>
+        </div><br>
+        <h1>column</h1>
+        <div class="container2">
+            <div >NARENDRA REDDY</div>
+            <div>nithish REDDY</div> 
+            <div>rakesh</div> 
+            <div>sandeep</div>
+        </div><br>
+        <h1>column-revrse</h1>
+        <div class="container3">
+            <div >777</div>
+            <div>nithish REDDY</div> 
+            <div>rakesh</div> 
+            <div>sandeep</div>
+        </div>
+    </body>
+</html>
