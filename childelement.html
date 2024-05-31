@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex wrap </title>
+        <style>
+            h1{
+                color: blue;
+                text-align: center;
+                text-decoration:  underline;
+            }
+            .container{
+                display: flex;
+              background-color: blueviolet;
+             
+            }
+            .container>div{
+              width: 150px;
+              background-color: beige;
+              margin: 20px;
+              padding: 10px;
+                font-size: 15px;
+            }
+            .container1{
+                display: flex;
+              background-color: blueviolet;
+              align-items:flex-start;
+            }
+            .container1>div{
+             
+              background-color:gray;
+              margin: 20px;
+              padding: 10px;
+               font-size: 20px;
+               width: 80px;
+               text-align: center;
+            }
+            .container2{
+                display: flex;
+              background-color: blueviolet;
+             align-items: baseline;
+            }
+            .container2>div{
+             
+              background-color: wheat;
+              margin: 20px;
+              padding: 5px;
+              font-size: 20px;
+              width: 60px;
+              text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>child elements</h1>
+        <h1>order property</h1>
+        <div class="container">
+            <div style="order: 2">NARENDRA REDDY</div>
+            <div style="order: 3">nithish REDDY</div> 
+            <div style="order: 1">rakesh</div> 
+            <div style="order: 0">sandeep</div>
+        </div><br>
+        <h1>flex-grow</h1>
+        <div class="container1">
+            <div>1</div>
+            <div>2</div> 
+            <div>3</div> 
+            <div style="flex-grow:6">4</div>
+            <div>5</div> 
+        </div><br>
+        <h1>flex-shrink</h1>
+        <div class="container2">
+            <div>1</div>
+            <div>2</div> 
+            <div>3</div> 
+            <div>4</div>
+            <div>5</div> 
+            <div style="flex-shrink:0">2</div>
+            <div>7</div> 
+            <div>8</div>
+        </div><br>
+       
+    </body>
+</html>
