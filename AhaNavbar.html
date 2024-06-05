@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>aha navbar</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+         font-family:'Courier New', Courier, monospace
+        }  
+        
+        .navbar{
+            overflow: hidden;
+            display: flex;
+            margin: 10px;
+           background-color: black;
+           justify-content: first baseline;
+           text-align: center;
+        }
+        .navbar a{
+          font-size: 20px;
+          float: left;
+          color:blue;
+          text-align:center;
+         padding: 14px 16px;
+         text-decoration:none;
+         display: flex;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+          }
+
+           .dropdown .dropbtn {
+          font-size: 20px; 
+          border: none;
+          outline: none;
+         color: blue;
+         padding: 18px 20px;
+         background-color:inherit;
+         margin: 0;
+          }
+          .navbar a:hover {
+           background-color:blue;
+          color:black;
+         }
+
+.dropdown:hover .dropbtn{
+background-color:rgb(25,30,37);
+}
+
+.dropdown-content {
+display: none;
+position:absolute;
+background-color:rgb(25,30,37);
+min-width: 160px;
+box-shadow: 0px 8px 26px 0px rgba(0,0,0,0.2);
+z-index: 2;
+padding: 30px;
+}
+
+.dropdown-content a {
+float: none;
+color: blue;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+   /* Some basic styling */
+   .search-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        input[type=text] {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+h3{
+color: blue;
+}
+
+#bg{
+    background-color: skyblue;
+    height: 100vh;
+    width: 100%;
+}
+    </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="Aha_OTT_Logo.svg" alt="aha video" width="150px" height="80px" position="center">
+       <div class="dropdown">
+       <button class="dropbtn">Home
+        <i class="fa fa-caret-down"></i>
+       </button>
+     </div>
+
+     <div class="dropdown">
+     <button class="dropbtn">All
+        <i class="fa fa-caret-down"></i>
+       </button>
+     </div>
+     
+
+     <div class="dropdown">
+     <button class="dropbtn">HOME
+        <i class="fa fa-caret-down"></i>
+       </button>
+    </div>
+
+     <div class="dropdown">
+     <button class="dropbtn">SHOWS
+        <i class="fa fa-caret-down"></i>
+       </button>
+    </div>
+
+     <div class="dropdown">
+     <button class="dropbtn">SIFF
+        <i class="fa fa-caret-down"></i>
+       </button>
+     </div>
+
+     <div class="dropdown">
+     <button class="dropbtn">WatchFor Free
+        <i class="fa fa-caret-down"></i>
+       </button>
+    </div>
+
+
+     <div class="dropdown">
+        <button class="dropbtn">Language
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">telugu</a>
+            <a href="#">english</a>
+            <a href="#">hindi</a>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <form action="/search" method="get">
+            <input type="text" placeholder="Search.." name="search">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn"><i class="fa-solid fa-user" style="border: 10px solid ; height: 30px;width: 30px;border-radius: 360%;color:rgb(179,191,200);background-color:rgb(51,76,97);" ></i></button>
+        <div class="dropdown-content">
+         <a href="sign in">Sign In</a>
+         <a href="help">Help</a>
+         <a href="wacth anywhere">Watch Any Where</a>
+        </div>
+    </div> 
+</div>
+
+<div id="bg"></div>
+    
+    </body>
+</html>
