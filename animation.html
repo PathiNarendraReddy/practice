@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+                        @keyframes abc {
+                from{background-color: chartreuse;}
+                to{background-color: rgb(13, 0, 255);}
+                
+            }
+            @keyframes xyz{
+            0%{right:0px;left:0px;background-color: aqua;}
+            30%{right:100px;left:0px;background-color: brown;}
+            50%{right:100px;left:100px;background-color: chocolate;}
+            85%{right:0px;left:100px;background-color: pink;}
+            100%{right:0px;left:150px;background-color: green;}
+           }
+            div{
+                width:400px;
+                height: 200px;
+                position:absolute;
+                border:2px solid rgb(128, 0, 51);
+            }
+            #div1{
+                   animation-name: xyz;
+                   animation-duration: 5s;
+                   animation-delay: 3s;
+                   animation-iteration-count: 3;
+                   animation-direction:reverse;
+                   animation-fill-mode:both;
+                   animation-timing-function: ease-in;
+                   
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="div1">Narendra</div>
+    </body>
+</html>
+
+
+        
+   
