@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>resort booking</title>
+        <meta charset="UTF-8">
+        <meta name="veiwport" content="width=device-width,initial-scale=1.0">
+        <title>RESORT BOOKING FORM</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awsome/4.7.0/css/font-awsome.min.css">
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url("RESORT1.jpg");
+    background-position: center;
+}
+h1{
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+   
+}
+#form{
+background-color: black;
+height: 400px;
+width: 450px;
+margin: auto;
+margin-top: 100px;
+opacity: 0.7;
+}
+#first-group{
+    border: 3px solid green;
+    width: 280px;
+    margin-top: 40px;
+    position: absolute;
+}
+#content{
+    border: 10px solid white;
+    margin: 10px;
+    margin-left: 15px;
+    padding: 10px;
+}
+#content #input-group{
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 7px;
+    color: white;
+}
+::placeholder{
+color: white;
+}
+.fa{
+    display: inline-block;
+    color: brown;
+    border-right: 2px solid white;
+    padding: 8px;
+    margin-left: 8px;
+}
+
+    </style>
+    <body>
+<div class="container">
+    
+    <form class="form-group">
+        <div id="form">
+            <h1 class="text-white text-center">BOOKING NOW</h1>
+            <div id="first-group">
+                <div id="content">
+                    <i class="fa fa-user"aria-hidden="true"></i>
+                <input type="text" id="input-group" placeholder="First name">
+            </div>
+           
+            <div id="content">
+                
+                <i class="fa-solid fa-phone"aria-hidden="true"></i>
+                <input type="text" id="input-group" placeholder="phone number">
+            </div>
+            <div id="content">
+                <i class="fa-solid fa-calendar-days"aria-hidden="true"></i>
+                <input type="text" id="input-group" placeholder="Departure Date">
+            </div>
+
+            <div id="content">
+                <i class="fa fa-user"aria-hidden="true"></i>
+               <select id="input-group" style="background-color: black;">
+                <option value="">no.of guests</option>
+                <option value="">no.of 1-5</option>
+                <option value="">no.of 6-10</option>
+                <option value="">no.of 11-15</option>
+               </select>
+            </div>
+        </div>
+        
+    </form>
+</div>
+    </body>
+</html>
