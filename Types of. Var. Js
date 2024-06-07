@@ -1,0 +1,10 @@
+var a=33;
+console.log("type of a:"+ (typeof a));
+var b="hello welcome";
+console.log("type of b:"+ (typeof b));
+var c="";
+console.log("type of c:"+ (typeof c));
+var d="null";
+console.log("type of d:"+ (typeof d));
+var e="33.33f";
+console.log("type of e:"+ (typeof e));
