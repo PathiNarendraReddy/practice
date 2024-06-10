@@ -1,0 +1,9 @@
+const num=5;
+          if(num>6){
+            console.log("given number is bigg");
+          }else if(num<6){
+            console.log("given number is less");
+
+          }else{
+            console.log("given number is 6");
+          }
