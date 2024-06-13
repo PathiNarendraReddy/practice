@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>image Carousel</title>
+    <style>
+        .scroll{
+            background: lightblue;
+            height: auto;
+            width:150px ;
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+            margin-top: 30px;
+            box-shadow: 5px 10px 5px royalblue;
+            align-items: center;
+        }
+
+        .review-items {
+            align-items: center;
+            justify-content: space-evenly;
+            width: 250px;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .review-items img {
+            height: 400px;
+            width: 1000px;
+            border-radius: 5px;
+            margin-left: 4px;
+            box-shadow: green;
+            text-align: left;
+        }
+
+        .review-button {
+            text-align: center;
+            padding: 3px;
+            margin: 10px;
+        }
+
+        .review-button button {
+           background-color: white;
+           color: green;
+            font-weight: bold;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            
+        }
+        .review-items {
+            display: none;
+            
+        }
+       
+        H1{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            text-decoration:overline underline;
+            padding: 20px;
+            margin: 5px;
+          
+           
+        }
+    </style>
+</head>
+
+<body>
+    <H1>IMAGE CAROUSELS</H1>
+    <script>
+        let rev = 0;
+        carousel(rev);
+
+        function previousReview() {
+            rev = rev - 1;
+            carousel(rev);
+        }
+
+        function nextReview() {
+            rev = rev + 1;
+            carousel(rev);
+        }
+
+        function carousel(review) {
+            let reviews = document.getElementsByClassName("review-items");
+
+            if (review >= reviews.length) {
+                review = 0;
+                rev = 0;
+            }
+            if (review < 0) {
+                review = reviews.length - 1;
+                rev = reviews.length -1 ;
+            }
+            for (let i = 0; i < reviews.length; i++) {
+                reviews[i].style.display = "none";
+            }
+            reviews[review].style.display = "block";
+        }
+    </script>
+
+    <div class="scroll">
+        <div class="review-items">
+            <img src="medical.jpg"
+                 class="slide" alt="narendra">
+        </div>
+
+        <div class="review-items">
+            <img src="medical1.jpg"
+                 class="slide" alt="narendra">
+        </div>
+
+        <div class="review-items">
+            <img src="medical2.jpg"
+                class="slide" alt="narendra">
+        </div>
+        <div class="review-items">
+            <img src="medical3.jpg"
+                 class="slide" alt="narendra">
+        </div>
+        <div class="review-items">
+            <img src="medical.jpg"
+                 class="slide" alt="narendra">
+        </div>
+
+        <div class="review-button">
+            <button id="prev" onclick="previousReview()">
+          NEXT
+            </button>
+
+            <button id="next" onclick="nextReview()">
+            PREVIOUS
+            </button>
+        </div>
+    </div>
+            
+</body>
+
+</html>
