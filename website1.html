@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title> NEW WEBSITE </title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="website1.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:url(RESORT1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: auto;
+    align-items: center;
+    
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    
+    
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin:  0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: blueviolet;
+    background-color: wheat;
+    
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translatey(-50%);
+    text-align: center;
+color:green;
+
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 70px;
+}
+.content p{
+    margin: 30px auto;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+    color: orange;
+}
+button{
+    width: 200px;
+   padding: 10px 0;
+   text-align: center;
+   margin: 20px 10px;
+   font-weight: bold;
+   border-radius: 25px green;
+  color: blue;
+  background-color: gray;
+  overflow: hidden;
+}
+span{
+   
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index:-1;
+    transition: 0,5s;
+
+}
+button:hover span{
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+</style>
+
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img logo="C:\Users\nr703\html\trianingpractice\website.html\Resort.png" class="logo">
+                <ul>
+                    <li><a href="HOME">HOME</a></li>
+                    <li><a href="ABOUT">ABOUT</a></li>
+                    <li><a href="ADDRESS">ADDRESS</a></li>
+                    <li><a href="DETAILS">DETAILS</a></li>
+                    <li><a href="GUEST">GUEST</a></li>
+                </ul>
+            </div>
+            
+       
+        <div class="content">
+            <h1>HELLO Narendra Reddy Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</br> 
+                Cupiditate molestias, hic dolorum natus ipsum adipisci <br>fugit distinctio.
+                 Perferendis, mollitia nam.</p>
+        <div>
+        <button type="button"><span></span> BOOK</button>
+        <button type="button"><span></span> BOOK</button>
+    </div>
+        </div>
+        
+    </body>
+</html>
